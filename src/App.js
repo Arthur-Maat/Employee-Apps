@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 
 import EmployeeList from './Components/EmployeeList/EmployeeList';
 
+
+import SearchBar from './Components/SearchBar/SearchBar';
 import EmployeeForm  from './Components/EmployeeForm/EmployeeForm';
 import './App.css';  // Importing global CSS (if any)
 
 function App() {
-  // State to manage employees and the selected employee for editing
+// State to manage employees and the selected employee for editing
   const [employees, setEmployees] = useState([]);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
+  const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
   // Fetch employees from localStorage on component mount
   useEffect(() => {
@@ -50,6 +53,21 @@ function App() {
     setEmployees(updatedEmployees);
   };
 
+ 
+/*
+  // Filter employees based on search term
+  const filteredEmployees = employees.filter((employee) => {
+    const searchLower = searchTerm.toLowerCase();
+    return (
+      employee.name.toLowerCase().includes(searchLower) ||
+      employee.surname.toLowerCase().includes(searchLower) ||
+      employee.id.toString().includes(searchTerm) ||
+      employee.department.toLowerCase().includes(searchLower)
+    );
+  });  
+
+*/
+ 
   return (
     <div className="App">
       <h1>Employee Management Portal</h1>

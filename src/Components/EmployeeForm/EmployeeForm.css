@@ -1,30 +1,45 @@
 .employee-form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    max-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  .employee-form label {
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    width: 150px; /* Set a fixed width for labels */
     font-weight: bold;
+    margin-right: 10px;
+    text-align: right; /* Align label text to the right */
   }
   
-  .employee-form input {
+  .form-group input {
+    flex: 1; /* Allow input to take the remaining space */
     padding: 8px;
-    border-radius: 4px;
     border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
-  .employee-form button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
+  .image-preview {
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #6c3f77;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  .employee-form button:hover {
-    background-color: #218838;
+  button:hover {
+    background-color: #15d625;
   }
   

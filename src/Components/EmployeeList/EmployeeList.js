@@ -11,7 +11,7 @@ const EmployeeList = ({ employees, onEdit, onDelete }) => {
             key={employee.id}
             employee={employee}
             onEdit={() => onEdit(employee.id)}
-            onDelete={() => onDelete(employee.id)}
+            onDelete={() => onDelete(employee.id)}g
           />
         ))
       ) : (
