@@ -1,0 +1,40 @@
+.employee-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .employee-details {
+    margin-left: 16px;
+    flex-grow: 1;
+  }
+  
+  .employee-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .employee-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 8px;
+  }
+  
+  .employee-actions button:last-child {
+    background-color: #dc3545;
+  }
+  
