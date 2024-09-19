@@ -1,0 +1,19 @@
+/* Home.css */
+
+.home-container {
+    background-image: url('employee.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home-title {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adding shadow for contrast */
+  }
+  

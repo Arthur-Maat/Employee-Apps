@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.headingPortal{
+
+color: rgb(40, 6, 51);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

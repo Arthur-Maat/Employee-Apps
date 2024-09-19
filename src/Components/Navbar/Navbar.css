@@ -1,0 +1,35 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #695c51; /* Dark background */
+    position: sticky;      /* Sticky so it stays at the top when scrolling */
+    top: 0;
+    width: 100%;           /* Full width */
+    z-index: 1000;         /* Ensure it stays on top of other content */
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;         /* Use flexbox to arrange links horizontally */
+    justify-content: space-around; /* Spread links evenly */
+  }
+  
+  .navbar ul li {
+    display: inline; /* Ensure list items are inline */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .navbar ul li a {
+    display: block; /* Make the links fill the space */
+    color: white;   /* Text color */
+    text-align: center;
+    padding: 14px 20px; /* Padding for clickable area */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar ul li a:hover {
+    color: #e4802e; /* Hover effect */
+  }
+  
